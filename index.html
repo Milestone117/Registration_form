@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Attendance form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="registration-box">
+        <h2>Registration Form</h2>
+        <form id="submit-form">
+          <div class="input-box">
+            <input type="text" required />
+            <label>Full Names</label>
+          </div>
+          <div class="input-box">
+            <input type="text" required />
+            <label>Position</label>
+          </div>
+          <div class="input-box">
+            <input type="text" required />
+            <label>Region</label>
+          </div>
+          <div class="input-box">
+            <input type="text" required />
+            <label>District</label>
+          </div>
+          <div class="input-box">
+            <input type="text" required />
+            <label>Ward</label>
+          </div>
+          <div class="input-box">
+            <input type="tel" required />
+            <label>Telephone</label>
+          </div>
+          <div class="input-box">
+            <input type="email" required />
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <canvas id="signature-canvas" width="300" height="100" style="border:1px solid #000000;" ></canvas>
+            <input type="hidden" id="signature" name="signature" placeholder="signature">
+            <input type="reset" value="Clear Signature" onclick="clearSignature()">
+          </div>
+          <button type="submit" class="btn1">submit</button>
+        </form>
+      </div>  
+    </div>
+    <script src="./scipts.js"></script>
+  </body>
+</html>
